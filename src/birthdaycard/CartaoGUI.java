@@ -13,6 +13,11 @@ public class CartaoGUI extends JFrame {
 
     public CartaoGUI() {
         setTitle("🎂 Cartão de Aniversário 🎉");
+        // Ícone da janela
+        Image appIcon = Toolkit.getDefaultToolkit().getImage(
+                getClass().getClassLoader().getResource("images/icon.png")
+        );
+        setIconImage(appIcon);
         setSize(350, 175);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
